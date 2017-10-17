@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import User from './components/user';
 import Home from './components/home';
 import NotFound from './components/not-found';
+import Navbar from './components/subComponent/navbar';
 
 ReactDOM.render(
   <BrowserRouter>
-    <div>
+    <Navbar/>
+    <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/users" component={User}/>
-    </div>
+      <Route component={NotFound}/>
+    <Switch/>
   </BrowserRouter>
   , document.querySelector('.container'))
 

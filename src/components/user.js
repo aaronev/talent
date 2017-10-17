@@ -7,7 +7,6 @@ export default class User extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
         <p>Talent@LearnersGuild.com</p>
       </div>
     );

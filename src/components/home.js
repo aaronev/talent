@@ -13,6 +13,7 @@ const data = [
     info: "some info"
   }
 ]
+        // <!--<About data={data[0]}/>-->
 
 export default class Home extends Component {
   
@@ -20,8 +21,6 @@ export default class Home extends Component {
 
     return (
       <div>
-        <Navbar/>
-        <About data={data[0]}/>
       </div>
     );
   }

@@ -7,8 +7,8 @@ export default class NotFound extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
-        <p> PAGE NOT FOUND </p>
+        <i> error_outline </i>
+        <h2>Page Not Found</h2>
       </div>
     );
   }
